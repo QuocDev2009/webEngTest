@@ -10,7 +10,13 @@ for (let i = 0; i < btn.length; i++){
         myPage[j].classList.remove("active");
     }
         e.target.classList.add("active");
-        let n = document.querySelector(`.${e.target.title}`);
+        var n;
+        switch (e.target.title){
+            case 'home': n = document.querySelector('.home'); break;
+            case 'update': n = document.querySelector('.update'); break;
+            case 'contact': n = document.querySelector('.contact'); break;
+            case 'profile': n = document.querySelector('.profile'); break;
+        }
         if (n) {
             n.classList.add("active");
         }

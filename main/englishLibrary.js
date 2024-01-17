@@ -400,5 +400,3 @@ makeQuestion(
     bookObj,
     false
 );
-
-alert(questionsLibrary.length);
