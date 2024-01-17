@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<title>web</title>
+</head>
+
+<div>
+
+	<div class="test">
+		<div class="general">
+			xem lại số điểm
+		</div>
+		<div class="result">
+			<h1 class = "normalText">kết quả của bạn</h1>
+			<div class="announce">
+				<h2 class="trueAnswer">số lượng câu bạn đã làm đúng: </h2>
+				<h2 class="falseAnswer">số lượng câu bạn đã làm sai: </h2>
+				<h2 class="noneAnswer">số lượng câu bạn đã bỏ/không làm: </h2>
+			</div>
+			<hr>
+			<div class="score">
+				<h1 class = "scoreRes"></h1>
+			</div>
+			<hr>
+			<div class="space">
+				
+			</div>
+			<div class="btnDiv">
+				<a class="resetBtn norBtn" onclick="window.location.reload()" href = "../main.html">
+					trở lại
+				</a>
+				<div class="exitBtn norBtn">
+					xem bài
+				</div>
+			</div>
+		</div>
+		<div class="question">
+			<div class="question__label">Question 1:</div>
+			<div class="question__content"></div>
+		</div>
+		<div class="answer">
+			<div class="ans left">
+				<div id="a">A</div>
+				<div class="content" title="A">bus</div>
+			</div>
+			<div class="ans right">
+				<div id="b">B</div>
+				<div class="content" title="B">motorbike</div>
+			</div>
+			<div class="ans left">
+				<div id="c">C</div>
+				<div class="content" title="C">plane</div>
+			</div>
+			<div class="ans right">
+				<div id="d">D</div>
+				<div class="content" title="D">train</div>
+				<div class="close"></div>
+			</div>
+		</div>
+		<div class="correctChoose explain none">
+			<div class="title">
+				<i class="fa-solid fa-circle-check green"></i>
+				<b class="green">Đáp án chính xác.</b>
+			</div>
+			<div class="explainContent">
+				bla bla bla...
+			</div>
+		</div>
+		<div class="wrongChoose explain none">
+			<div class="title">
+				<i class="fa-solid fa-circle-xmark red"></i>
+				<b class="red">Chọn sai đáp án.</b>
+			</div>
+			<div class="explainContent">
+				bla bla bla...
+			</div>
+		</div>
+		<div class="notChoose explain ">
+			<div class="title">
+				<i class="fa-solid fa-triangle-exclamation yellow"></i>
+				<b class="yellow">Bạn không chọn đáp án!</b>
+			</div>
+			<div class="explainContent" style="color: black;">
+				bla bla bla...
+			</div>
+		</div>
+		<div class="action">
+			<div class="act disenable" id="back">Câu trước.</div>
+			<div class="act" id="next">Câu sau.</div>
+		</div>
+		<div id="control"></div>
+		<div class="submit">
+			<div class="sm--act">nộp bài!</div>
+		</div>
+	</div>
+	<script src="makeControlTable.js"></script>
+	<script type="module" src="main.js"></script>
+</body>
+
+</html>
